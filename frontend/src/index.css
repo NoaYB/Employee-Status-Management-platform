@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+
+:root {
+  /* Cream & Modern Palette */
+  --bg-color: #fdfbf7;
+  /* Cream/Off-white background */
+  --text-primary: #1c1c1e;
+  /* Soft Black */
+  --text-secondary: #6e6e73;
+  /* Cool Grey */
+  --accent-color: #2c2c2e;
+  /* Dark accent for buttons */
+  --card-bg: #ffffff;
+  --border-color: #ebebeb;
+  --shadow-warm: 0 4px 20px rgba(0, 0, 0, 0.03);
+  /* Softer, warmer shadow */
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'DM Sans', system-ui, -apple-system, sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-primary);
+  min-height: 100vh;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
