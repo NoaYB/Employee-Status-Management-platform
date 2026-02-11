@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>frontend</title>
+</head>
+
+<body>
+  <div id="root"></div>
+  <script>
+    window.onerror = function (message, source, lineno, colno, error) {
+      // Create error display
+      var div = document.createElement('div');
+      div.style.position = 'fixed';
+      div.style.top = '0';
+      div.style.left = '0';
+      div.style.width = '100%';
+      div.style.padding = '20px';
+      div.style.backgroundColor = '#ffecec';
+      div.style.color = '#d8000c';
+      div.style.border = '1px solid #d8000c';
+      div.style.zIndex = '9999';
+      div.style.whiteSpace = 'pre-wrap';
+      div.style.fontFamily = 'monospace';
+      div.innerText = 'Global Error:\n' + message + '\nAt: ' + source + ':' + lineno + ':' + colno + '\n' + (error ? error.stack : '');
+      document.body.appendChild(div);
+    };
+  </script>
+  <script type="module" src="/src/main.tsx"></script>
+</body>
+
+</html>
