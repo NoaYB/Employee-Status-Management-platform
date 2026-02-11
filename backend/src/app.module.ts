@@ -18,6 +18,7 @@ import { Employee } from './employees/employee.entity';
           return {
             type: 'postgres',
             url: dbUrl,
+<<<<<<< HEAD
             ssl: {
               rejectUnauthorized: false,
             },
@@ -26,6 +27,9 @@ import { Employee } from './employees/employee.entity';
                 rejectUnauthorized: false,
               },
             },
+=======
+            ssl: { rejectUnauthorized: false },
+>>>>>>> 87a00579f4f49fb29bbe4ac156f535c8b1772165
             entities: [Employee],
             synchronize: true,
           };

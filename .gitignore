@@ -1,0 +1,29 @@
+# Dependencies
+node_modules/
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Build outputs
+dist/
+build/
+coverage/
+
+# Misc
+.DS_Store
+*.log
+.vscode/
+.idea/
+employees.db
+
+home-exercise/
+home-exercise.zip
+
+
+home-exercise/
+home-exercise.zip
+

@@ -54,3 +54,9 @@ pids
 
 # Diagnostic reports (https://nodejs.org/api/report.html)
 report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
+<<<<<<< HEAD
+=======
+
+uploads/
+
+>>>>>>> 87a00579f4f49fb29bbe4ac156f535c8b1772165

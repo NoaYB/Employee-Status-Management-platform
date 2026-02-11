@@ -13,10 +13,17 @@ export class EmployeesService {
   constructor(
     @InjectRepository(Employee)
     private readonly employeesRepository: Repository<Employee>,
+<<<<<<< HEAD
   ) { }
 
   findAll(): Promise<Employee[]> {
     // Sort by ID descending as we don't have createdAt
+=======
+  ) {}
+
+  findAll(): Promise<Employee[]> {
+    // אין createdAt ב-entity, אז נסדר לפי id
+>>>>>>> 87a00579f4f49fb29bbe4ac156f535c8b1772165
     return this.employeesRepository.find({ order: { id: 'DESC' } });
   }
 
@@ -40,7 +47,11 @@ export class EmployeesService {
   async updateAvatar(id: number, avatarUrl: string): Promise<Employee> {
     const employee = await this.findOne(id);
 
+<<<<<<< HEAD
     // Delete old avatar if exists
+=======
+    // מחיקת תמונה קודמת אם קיימת
+>>>>>>> 87a00579f4f49fb29bbe4ac156f535c8b1772165
     if (employee.avatarUrl) {
       const oldFilename = employee.avatarUrl.replace('/uploads/', '');
       const oldPath = join(process.cwd(), 'uploads', oldFilename);
